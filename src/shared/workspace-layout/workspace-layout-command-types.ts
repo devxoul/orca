@@ -223,7 +223,10 @@ export type LayoutCommand =
  */
 export type InitialSurfaceReason = 'restore' | 'activation'
 
+/** The ids are the window's: it keys its spawn inputs by them before main answers. */
 export type DefaultTerminalTab = {
+  tabId: string
+  leafId: string
   title?: string
   color?: string
   creation?: Partial<LayoutTerminalCreation>
